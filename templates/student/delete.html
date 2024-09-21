@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    
+</head>
+<body>
+    <form method="post">
+        {% csrf_token %}
+        您确定要删除id{{ student.id }} name:{{ student.name }} age:{{ student.age }} 的记录吗？
+        <input type="submit" value="提交">
+    </form>
+</body>
+</html>
